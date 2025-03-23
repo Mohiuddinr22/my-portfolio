@@ -9,26 +9,51 @@
     height: auto;
 }
 
-#image-container{
+.info-container{
+    background-color: rgb(230, 230, 255);
+    padding: 20px 20px;
     width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+@media (max-width: 1000px){
+    .info-container{
+        flex-direction: column;
+    }
+}
+
+.profile-picture{
+    margin: 20px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    width: 40%;
+    height: 300px;
 }
 
-.image-carousel{
-    width: 300px;
+img{
+    min-width: 300px;
     height: 300px;
     overflow: hidden;
 }
 
 .info{
-    width: 100%;
+    margin: 20px 20px;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+}
+
+.info button{
+    margin: 5px 5px;
 }
 
 .footer {
